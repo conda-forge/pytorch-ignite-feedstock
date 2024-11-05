@@ -1,5 +1,5 @@
 {% set name = "pytorch-ignite" %}
-{% set version = "0.4.8" %}
+{% set version = "0.4.9" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytorch-ignite-{{ version }}.tar.gz
-  sha256: 7f5d7064d92b742b13009fa40493f24ade239d1ced91eecb47a7b23feecef1d4
+  sha256: b959c86dced957229df98eeb8035c2e396ec66965b26aa370c8b5ad21777ef40
 
 build:
   number: 0
