@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytorch-ignite-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytorch_ignite-{{ version }}.tar.gz
   sha256: f41050bb0f85da6a4e5483cbc584ddf300382f537cd2f31cbb05ad62b8a6682e
 
 build:
