@@ -1,14 +1,14 @@
 {% set name = "pytorch-ignite" %}
-{% set version = "0.4.8" %}
-
+{% set version = "0.5.1" %}
+{% set python_min = python_min|default("3.6") %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytorch-ignite-{{ version }}.tar.gz
-  sha256: 7f5d7064d92b742b13009fa40493f24ade239d1ced91eecb47a7b23feecef1d4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytorch-ignite-{{ version }}.tar.gz
+  sha256: f41050bb0f85da6a4e5483cbc584ddf300382f537cd2f31cbb05ad62b8a6682e
 
 build:
   number: 0
@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
-    - pytorch >=1.3,<2
+    - python >={{ python_min }}
+    - pytorch >=1.3
 
 test:
   imports:
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pytorch/ignite
