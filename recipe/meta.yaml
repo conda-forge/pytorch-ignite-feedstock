@@ -1,5 +1,5 @@
 {% set name = "pytorch-ignite" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 {% set python_min = python_min|default("3.6") %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytorch_ignite-{{ version }}.tar.gz
-  sha256: f41050bb0f85da6a4e5483cbc584ddf300382f537cd2f31cbb05ad62b8a6682e
+  sha256: 63bdbafe3fb76bf243e4c7fa4b71c89a652fece6c4c2f6e3c5b448ac74447d98
 
 build:
   number: 0
