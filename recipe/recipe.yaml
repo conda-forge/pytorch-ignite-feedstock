@@ -46,4 +46,5 @@ about:
 extra:
   feedstock-name: pytorch-ignite
   recipe-maintainers:
+    - jeongseok-meta
     - knc6
